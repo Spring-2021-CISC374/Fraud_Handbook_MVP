@@ -80,7 +80,7 @@ class game1next extends Phaser.Scene {
             gameObject.play("explode");
             this.score += 1;
             this.scoreBoard.setText('Score: ' + this.score);
-            if (this.score == 5) {
+            if (this.score == 4) {
                 this.game1win();
             }
         }
