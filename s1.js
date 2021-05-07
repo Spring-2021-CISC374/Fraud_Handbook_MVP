@@ -7,7 +7,7 @@ class s1 extends Phaser.Scene {
     create() {
         this.backG = this.add.tileSprite(0, 0, 800, 800, "setting_background");
         this.backG.setOrigin(0, 0);
-        this.add.text(100, 200, "In the recent outbreak, you were laid off from your job \nas a member of the company's IT department, which was \na big blow to your family.");
+        this.add.text(100, 200, "In the recent outbreak, \nyou were laid off from your job \nas a member of the company's IT department.");
         // this.add.text(100, 250, "a member of the company's IT department,\n which was a big blow to your family");
         //this.music_1 = this.add.audio('bgm', 0.8, true);
        // this.music_1.play();
