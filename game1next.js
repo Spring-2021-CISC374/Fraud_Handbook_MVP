@@ -7,7 +7,7 @@ class game1next extends Phaser.Scene {
     create() {
         this.minigame1_background = this.add.tileSprite(0, 0, 800, 600, "chaseb");
         this.minigame1_background.setOrigin(0, 0);
-        this.add.text(10, 50, "Pick the items then Click the police to stop their trace!", { fontSize: '20px', fill: '#00f' });
+        this.add.text(10, 50, "Pick the items then Click the police to stop their trace!", { fontSize: '20px', fill: '#f00' });
        // this.music_1 = game.add.audio('bgm', 0.8, true);
        // this.music_1.play();
         this.clues = this.physics.add.group();
@@ -26,7 +26,7 @@ class game1next extends Phaser.Scene {
         for (var i = 0; i < 5; i++) {
             var clue = this.physics.add.sprite(16, 16, 'po');
             this.clues.add(clue);
-            clue.setRandomPosition(0, 0, 800, 600);
+            clue.setRandomPosition(0, 0, 800, 400);
             clue.setInteractive();
             clue.setVelocity(75, 75);
             clue.setCollideWorldBounds(true);

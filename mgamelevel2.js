@@ -8,6 +8,7 @@ class level2 extends Phaser.Scene {
         this.minigame1_background = this.add.tileSprite(0, 0, 800, 600, "minigame1_background");
         this.minigame1_background.setOrigin(0, 0);
         this.add.text(10, 50, "Level 2| be careful trap!");
+        this.add.text(10, 80, "Hold 'Shift' to speed up!");
         //this.music_1 = game.add.audio('bgm', 0.8, true);
         //this.music_1.play();
         var randomX1 = Phaser.Math.Between(0, 800);

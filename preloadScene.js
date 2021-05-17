@@ -38,15 +38,22 @@ class preloadScene extends Phaser.Scene {
 
         this.load.image("po", "assets/img/police.png");
 
-        this.load.image("tutor", "assets/img/tuto.png");
+        this.load.image("tutor1", "assets/img/tuto2.png");
+        this.load.image("tutor2", "assets/img/tuto1.png");
 
         this.load.image("coin", "assets/img/coin.png");
 
         this.load.image("wb", "assets/img/workbox.png");
 
         this.load.image("chaseb", "assets/img/chaseb.png");
-       //this.load.audio('bgm', 'assets/img/bgm.mp3');
+        this.load.audio('bgm', 'assets/img/bgm.mp3');
         this.load.image("cback", "assets/img/coinback.png");
+
+        this.load.image("gushi1", "assets/img/gushi1.png");
+        this.load.image("gushi2", "assets/img/gushi2.png");
+        this.load.image("gushi3", "assets/img/gushi3.png");
+
+
         this.load.spritesheet("explosion", "assets/img/explosion.png", {
             frameWidth: 16,
             frameHeight: 16
@@ -62,7 +69,7 @@ class preloadScene extends Phaser.Scene {
 
 
     create() {
-        this.add.text(300,200, "Home page");
+        this.add.text(300,200, "Loading...");
         //this.wait(0);
         this.scene.start("Startmenu");
 

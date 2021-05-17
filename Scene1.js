@@ -27,7 +27,7 @@ class Scene1 extends Phaser.Scene {
         // let btn2 = this.add.text(500, 300, 'Play Game')
         // var btn1 = this.add.sprite(300, 350, 'playButton').setInteractive();
         // btn1.on('pointerdown', () => {this.scene.start('mainPage');});
-        var btn1 = this.add.text(320, 370, 'Start game', { fontSize: '20px', fill: '#ff0' }).setInteractive();
+        var btn1 = this.add.text(325, 370, 'Start game', { fontSize: '20px', fill: '#ff0' }).setInteractive();
         btn1.on('pointerdown', () => { this.scene.start('s1Page'); });
 
 
@@ -41,7 +41,7 @@ class Scene1 extends Phaser.Scene {
         // Setting page, tempory not avaliable
         // currently a debugging tool
         // var btn2 = this.add.text(300, 450, 'testing').setInteractive();
-        // btn2.on('pointerdown', () => { this.scene.start('resultPage'); });
+        // btn2.on('pointerdown', () => { this.scene.start('level2Page'); });
 
         //btnStart.setDisplaySize(32,32);
         //btnStart.on('pointerover', function (event) { btnStart.setTexture('imgButtonStartHover');/* Do something when the mouse enters */ });
@@ -52,7 +52,7 @@ class Scene1 extends Phaser.Scene {
         // }); // Start the main game.
 
         //this.add.text(350, 500, 'Exit');
-        var btn2 = this.add.text(340, 500, 'Exit').setInteractive();
+        var btn2 = this.add.text(355, 500, 'Exit').setInteractive();
         btn2.on('pointerdown', () => { this.scene.start('thankpage'); });
 
         

@@ -5,7 +5,7 @@ class shop extends Phaser.Scene {
     }
 
     create() {
-        this.desk = this.add.tileSprite(0, 0, 800, 800, "tutor");
+        this.desk = this.add.tileSprite(0, 0, 800, 800, "tutor1");
         this.desk.setOrigin(0, 0);
 
 

@@ -5,7 +5,7 @@ class tutorial2 extends Phaser.Scene {
     }
 
     create() {
-        this.desk = this.add.tileSprite(0, 0, 800, 800, "tutor");
+        this.desk = this.add.tileSprite(0, 0, 800, 800, "tutor2");
         this.desk.setOrigin(0, 0);
 
 

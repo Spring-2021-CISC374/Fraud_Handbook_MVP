@@ -17,8 +17,8 @@ class minigame2Scene extends Phaser.Scene {
         var Y3 = Phaser.Math.Between(0, 520);
 
         this.ship1 = this.add.sprite(X1, Y1, "shield");
-        this.ship2 = this.add.sprite(X2, Y2, "shield2");
-        this.ship3 = this.add.sprite(X3, Y3, "shield3");
+        this.ship2 = this.add.sprite(X2, Y2, "shield");
+        this.ship3 = this.add.sprite(X3, Y3, "shield");
 
         this.polic = this.physics.add.group();
         this.poli = this.add.sprite(0, 0, "po");
@@ -48,7 +48,7 @@ class minigame2Scene extends Phaser.Scene {
             powerUp.setRandomPosition(0, 0, 800, 600);
 
 
-            powerUp.setVelocity(85, 85);
+            powerUp.setVelocity(50, 50);
             powerUp.setCollideWorldBounds(true);
             powerUp.setBounce(1);
 
@@ -70,7 +70,7 @@ class minigame2Scene extends Phaser.Scene {
             projectile.destroy();
         });
 
-        this.physics.add.overlap(this.player, this.powerUps, this.pickPowerUp, null, this);
+        //this.physics.add.overlap(this.player, this.powerUps, this.pickPowerUp, null, this);
 
         this.physics.add.overlap(this.player, this.enemies, this.hurtPlayer, null, this);
 
@@ -85,11 +85,11 @@ class minigame2Scene extends Phaser.Scene {
         this.scene.start("lose2Page");
     }
 
-    pickPowerUp(player, powerUp) {
-        this.score -= 1;
-        this.scoreBoard.setText('Shield break: ' + this.score);
-        powerUp.setRandomPosition(0, 0, 750, 550);
-    }
+    //pickPowerUp(player, powerUp) {
+     //   this.score -= 1;
+      //  this.scoreBoard.setText('Shield break: ' + this.score);
+     //   powerUp.setRandomPosition(0, 0, 750, 550);
+    //}
 
     hurtPlayer(player, enemy) {
         this.score -= 1;

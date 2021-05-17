@@ -8,7 +8,7 @@ class s2 extends Phaser.Scene {
         this.backG.setOrigin(0, 0);
         this.add.text(80, 200, "Accidentally, you find a news is broadcasting a piece of information\n about network fraud. ");
         this.add.text(80, 280, "At this time, you remember the hacking skills you learned \nwhen you were a child, and through your understanding \nof your superiors, you also want to try to get the 'salary' \nyou think is your due through network fraud.");
-
+        
         //this.add.text(200, 400, "and through your understanding of your superiors,");
         //this.add.text(250, 500, " you also want to try to get the 'salary' you think is your due through network fraud.");
 

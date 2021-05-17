@@ -12,7 +12,8 @@ class Scene2 extends Phaser.Scene {
         //this.music_1 = game.add.audio('bgm', 0.8, true);
        // this.music_1.play();   
 
-        // this.add.text(100, 100, "$: 0");
+        this.add.text(300, 80, "Game 1", { fill: '#ff0' });
+        this.add.text(570, 195, "Game 2", { fill: '#ff0' });
 
         var btn_test_collect = this.add.sprite(340, 180,'collect_button').setInteractive();
         btn_test_collect.on('pointerdown', () => { this.scene.start('shopPage'); });
